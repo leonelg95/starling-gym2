@@ -1,0 +1,129 @@
+
+#section1 {
+
+display: flex;
+justify-content: center;
+height: 60vh;
+width: 100vw;
+margin: 10px;
+
+
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+form{
+    
+    color: #ECF0F1;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 23px 4px grey ;
+    font-family: monospace;
+    position: relative;
+    z-index: 2;
+
+
+
+}
+div{
+    width: 400px;
+    height: 20px;
+    margin: auto;
+    
+    
+}
+
+
+#logogym
+{
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    text-shadow:  -5px 3px 4px gray ;
+    
+}
+#iconologo
+{
+    display: flex;
+    align-items: center;
+    padding: 35px 20px ;
+}
+
+
+
+.btn_login {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+background: #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn_login:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn_login:active {
+    color: #000
+}
+
+.btn_login:active:after {
+    background: transparent;
+}
+
+.btn_login:hover:before {
+    opacity: 1;
+}
+
+.btn_login:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #85929E ;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

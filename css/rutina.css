@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&family=Sofia&display=swap');
+
+
+body{
+    background-image: url(../assests/imagen/carrusel/man-1282232_1280.jpg);
+    background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+  
+
+}
+
+
+.titulo_principal{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sofia', cursive;
+    color:aliceblue;
+    font-size: 80px;
+    margin: 80px;
+    text-align: center;
+    text-shadow: -5px 6px 8px ;
+}
+
+.videos{
+
+display: flex;
+flex-direction: column;
+padding: 100px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+
